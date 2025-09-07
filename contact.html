@@ -1,0 +1,42 @@
+<!doctype html><html lang='en'><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="assets/favicon.svg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .badge{border:1px solid rgba(34,211,238,.35);} /* cyan */
+    .btn-primary{background:linear-gradient(135deg,#22d3ee,#a78bfa); color:#020617;}
+    .btn-ghost{border:1px solid rgba(255,255,255,.15);}
+  </style>
+  <meta name="description" content="Fatima Noor — AI/ML & Computer Vision Portfolio (static, no build)." />
+  <title>Contact · Fatima Noor</title>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body class="bg-slate-950 text-neutral-100 antialiased">
+  <div id="site-header"></div>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
+    <h1 class="text-3xl font-semibold">Contact</h1>
+    <p class="text-neutral-300 mt-1">Use the buttons below — typical reply within 24 hours.</p>
+    <div class="rounded-2xl border border-white/10 p-8 bg-slate-900/60 mt-6">
+      <div class="flex flex-wrap items-center gap-3">
+        <a class="rounded-2xl px-4 py-2 btn-primary text-sm font-medium hover:opacity-90" id="email-btn">Email</a>
+        <a class="rounded-2xl px-4 py-2 btn-ghost text-sm" id="linkedin-btn" target="_blank">LinkedIn</a>
+        <a class="rounded-2xl px-4 py-2 btn-ghost text-sm" id="github-btn" target="_blank">GitHub</a>
+        <a class="rounded-2xl px-4 py-2 btn-ghost text-sm" id="resume-btn" target="_blank">Resume (PDF)</a>
+        <a class="rounded-2xl px-4 py-2 btn-ghost text-sm" id="phone-btn">Call</a>
+      </div>
+      <p class="text-neutral-400 text-sm mt-3">For a form, embed Google Forms or Formspree here (static hosting).</p>
+    </div>
+  </section>
+  <div id="site-footer"></div>
+  <script>
+    const s=window.SITE||{};
+    document.getElementById('email-btn').href = "mailto:"+(s.email||"");
+    document.getElementById('linkedin-btn').href = s.linkedin||"#";
+    document.getElementById('github-btn').href = s.github||"#";
+    document.getElementById('resume-btn').href = "assets/resume.pdf";
+    const phone = s.phone ? s.phone.replace(/\s+/g,'') : "";
+    document.getElementById('phone-btn').href = phone ? "tel:"+phone : "#";
+  </script>
+</body></html>

@@ -1,0 +1,48 @@
+<!doctype html><html lang='en'><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="assets/favicon.svg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .badge{border:1px solid rgba(34,211,238,.35);} /* cyan */
+    .btn-primary{background:linear-gradient(135deg,#22d3ee,#a78bfa); color:#020617;}
+    .btn-ghost{border:1px solid rgba(255,255,255,.15);}
+  </style>
+  <meta name="description" content="Fatima Noor — AI/ML & Computer Vision Portfolio (static, no build)." />
+  <title>Fatima Noor · AI/ML & Computer Vision Portfolio</title>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body class="bg-slate-950 text-neutral-100 antialiased">
+  <div id="site-header"></div>
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_10%_10%,rgba(34,211,238,0.22),transparent_40%),radial-gradient(circle_at_90%_20%,rgba(167,139,250,0.18),transparent_45%),radial-gradient(circle_at_50%_90%,rgba(20,184,166,0.16),transparent_45%)]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs btn-ghost text-neutral-300 mb-6">Available for freelance and full-time roles</div>
+        <h1 class="text-4xl sm:text-6xl font-bold leading-tight">AI/ML & Computer Vision projects <span class="text-neutral-300 font-light"> — practical systems that ship.</span></h1>
+        <p class="mt-6 text-neutral-300 max-w-2xl">I build reliable data pipelines and real-time vision applications (YOLOv8, OpenCV). Explore selected work below.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="projects.html" class="rounded-2xl px-4 py-2 btn-primary text-sm font-medium">See projects</a>
+          <a href="assets/resume.pdf" target="_blank" class="rounded-2xl px-4 py-2 btn-ghost text-sm">Resume (PDF)</a>
+        </div>
+        <div class="mt-8 flex items-center gap-3 text-xs text-neutral-400 flex-wrap">
+          <span class="badge rounded-full px-2.5 py-1">Python</span>
+          <span class="badge rounded-full px-2.5 py-1">YOLOv8</span>
+          <span class="badge rounded-full px-2.5 py-1">OpenCV</span>
+          <span class="badge rounded-full px-2.5 py-1">MediaPipe</span>
+          <span class="badge rounded-full px-2.5 py-1">Scikit-learn</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="flex items-end justify-between gap-4 mb-4"><h2 class="text-2xl sm:text-3xl font-semibold">Recent projects</h2><a href="projects.html" class="text-sm underline">View all</a></div>
+    <div id="recent-projects" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/helpers.js"></script>
+  <script src="assets/js/home.js"></script>
+</body></html>

@@ -1,0 +1,32 @@
+<!doctype html><html lang='en'><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="assets/favicon.svg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .badge{border:1px solid rgba(34,211,238,.35);} /* cyan */
+    .btn-primary{background:linear-gradient(135deg,#22d3ee,#a78bfa); color:#020617;}
+    .btn-ghost{border:1px solid rgba(255,255,255,.15);}
+  </style>
+  <meta name="description" content="Fatima Noor — AI/ML & Computer Vision Portfolio (static, no build)." />
+  <title>Projects · Fatima Noor</title>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body class="bg-slate-950 text-neutral-100 antialiased">
+  <div id="site-header"></div>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
+    <div class="mb-6"><h1 class="text-3xl font-semibold">Projects</h1><p class="text-neutral-300 mt-1">Computer vision case studies with code links. You can send me images later; I'll add them to the cards.</p></div>
+    <div class="flex flex-col md:flex-row gap-3 md:items-end md:justify-between mb-4">
+      <div class="flex items-center gap-2">
+        <select id="yolo-filter" class="bg-slate-900 border border-white/15 rounded-xl px-3 py-2 text-sm"><option value="all">YOLO: all</option><option value="v8">YOLOv8</option></select>
+        <select id="sort-by" class="bg-slate-900 border border-white/15 rounded-xl px-3 py-2 text-sm"><option value="recent">Sort: Most recent</option><option value="az">Sort: A → Z</option></select>
+        <input id="proj-query" placeholder="Search projects…" class="bg-slate-900 border border-white/15 rounded-xl px-3 py-2 text-sm min-w-[220px]" />
+      </div>
+    </div>
+    <div id="grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </section>
+  <div id="site-footer"></div>
+  <script src="assets/js/helpers.js"></script>
+  <script src="assets/js/projects.js"></script>
+</body></html>
